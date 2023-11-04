@@ -1,0 +1,224 @@
+/*IMPOSTAZIONI GENERALI*/
+:root{
+    --darkRed: darkred;
+    --myGrey: #ececec;
+    --myAcc: #C67F7F;
+}
+
+.bgmygrey{
+    background-color: var(--myGrey);
+
+}
+.bgdarkred {
+    background-color: var(--darkRed);
+}
+.txtdarkred {
+    color: var(--darkRed);
+}
+.rajdhani {
+    font-family: "Rajdhani";
+}
+.novasquare {
+    font-family: "Nova square";
+}
+
+/*SEZIONE NAVBAR*/
+.logo{
+    height: 10vh;
+}
+.nav-link-wrapper{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-link-wrapper li a{
+    color: var(--myWhite);
+    text-decoration: none;
+    font-family: "Rajdhani";
+    font-weight: 500;
+}
+
+/*SEZIONE HEADER*/
+.bg-header{
+    background: linear-gradient(180deg , white , #c67f7f50 , #ececec56) , url(./media/mountains2.png) , url(./media/switzerland-862870_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    width: 100%;
+}
+.h1custom {
+    text-transform: uppercase;
+    letter-spacing: 5vh;
+}
+
+
+/* SEZIONE CITAZIONE ROAD MAP */
+.timeline {
+    position: relative;
+    height: 0.5vh;
+    width:80%;
+    background-color: var(--darkRed);
+    border-radius: 10%;
+}
+.timeline::after {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border: 2px solid var(--darkRed);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* SEZIONE BOTTONE E ALBERI */
+.bg-section {
+    height: 70vh;
+    background-image: url(./media/trees2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mybutton {
+    height: 5vh;
+    padding: 5px 30px;
+    color: white;
+    background-color: var(--darkRed);
+    text-transform: uppercase;
+    position: relative;
+    top:20vh;
+    border: none;
+}
+
+/* Sezione Timeline Verticale */
+.border-left{
+    border-left: 3px solid var(--darkRed);
+    position: relative;
+    padding-left: 30px;
+}
+
+/* Aggiunta pallino prima di ogni H5 */
+.border-left h5 {
+    position: relative;
+    padding-left: 30px;
+     /* Aggiungi spazio a sinistra per il pallino */
+}
+
+.border-left h5::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    border: 2px solid var(--darkRed);
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: -50px; /* Regola questa posizione in base alle tue esigenze */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+.fw-bold{
+    font-weight: 500;
+}
+.bgwhite{
+    background-color: white;
+}
+.bg-timeline{
+    background: url(./media/single.png);
+    background-position: bottom;
+    background-position-x: 95%;
+    background-size: 60vh;
+    background-repeat: no-repeat;
+}
+
+
+
+
+/* Sezione OUR TEAM */
+.img-team{
+    height: 15vh;
+    width: 15vh;
+    border-radius: 50%;
+}
+.col-img-team{
+    height: 16.5vh;
+    width: 16.5vh;
+    border-radius: 50%;
+    border: 2px solid var(--darkRed)
+}
+
+
+
+/* Sezione OUR BENEFITS */
+.img-benefits{
+    height: 20vh;
+    width: 20vh;
+    border-radius: 50%;
+}
+.col-img-benefits{
+    height: 21vh;
+    width: 21vh;
+    border-radius: 50%;
+    border: 2px solid var(--darkRed)
+}
+.spacer{
+    height: 35vh;
+}
+.spacer-short{
+    height: 5vh;
+}
+.bg-benefits{
+    background: url(./media/other.png) , var(--myGrey) ;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+/* Sezione QUICK LINK */
+ul.list-custom{
+    list-style:disc;
+    color: white;
+}
+ul.list-custom>li>a {
+    text-decoration:none;
+    color: white;
+}
+
+
+/* Media Query SM */
+@media screen and (max-width: 576px) {
+    .bg-section {
+        height: 90vh;
+        background-image: url(./media/trees2.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+}
+
+/*Media Query MD*/
+@media screen and (min-width:577px) and (max-width:768px){
+
+}
+/*Media Query LG*/
+@media screen and (min-width:769px) and (max-width:992px){
+
+}
+/*Media Query XLG*/
+@media screen and (min-width:993px) and (max-width:1200px){
+
+}
+/* Regola per rendere il pallino responsive */
+@media (max-width: 768px) {
+    .timeline::after {
+        height: 15px;
+        width: 15px;
+    }
+}
